@@ -16,9 +16,24 @@ path {
 }
 
 rect:hover  {
-    fill: aqua;
+    fill: rgb(116, 112, 114);
 }
 
-line {
+#lineDiCaprio {
     stroke: black;
+    stroke-width: 2px;
 }
+
+#lineDiCaprio:hover {
+    stroke-width: 6px;
+}
+
+#numbers {
+    fill: black;
+    font-size: 14px;
+    text-anchor: middle;
+    font-weight : bold;
+}
+
+
+

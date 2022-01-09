@@ -5,6 +5,7 @@ const age = function(year) {
 const today = new Date().getFullYear()
 const ageToday = age(today)
 
+const all_ages = [age(1998), age(1999), age(2000), age(2001), age(2002), age(2003), age(2004), age(2005), age(2006), age(2007), age(2008), age(2009), age(2010), age(2011), age(2012), age(2013), age(2014), age(2015), age(2016), age(2017), age(2018), age(2019)]
 
 const width = 1000
 const height = 800
@@ -72,10 +73,7 @@ d3.csv("data.csv").then(data => {
         .append("title").text(d => d.name)
      
     elements.enter().append("text")
-        .attr("fill", "black")
-        .attr("font-size", "14px")
-        .attr("text-anchor", "middle")
-        .attr("font-weight", "bold")
+        .attr("id", "numbers")
         .attr("x", d => x(d.year))
         .attr("y", d => y(d.age))
         .attr("dx", x.bandwidth()/2)
@@ -83,24 +81,17 @@ d3.csv("data.csv").then(data => {
         .text(d=> d.age)
 
     elements.enter().append("line")
+        .attr("id", "lineDiCaprio")
         .attr("x1", x(d3.min(data.map(d => d.year))) + x.bandwidth()/2) 
         .attr("x2", x(d3.max(data.map(d => d.year))) + x.bandwidth()/2)
         .attr("y1", y(age(1998)))
         .attr("y2", y(age(2019)))
-    
-    elements.enter().append("path")
-        .attr("id", "Di_Caprio")
-        .attr("d", d3.line()
-        .x(d => x(d3.min(data.map(d => d.year))) + x.bandwidth()/2)
-        .y(d => d.age(2019)))
 
-    elements.enter().append("circle")
+/*  elements.enter().append("circle")
         .attr("cx", d => x(d.year) + x.bandwidth()/2) 
-        .attr("cy",  y(age(1998)))
-        .attr("r", 8) 
+        .attr("cy", d => y(d.all_ages))
+        .attr("r", 8) */
     
-    
-        
 })
 
 
