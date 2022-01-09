@@ -92,7 +92,7 @@ d3.csv("data.csv").then(data => {
         .attr("cy", d => y(d.all_ages))
         .attr("r", 8) */
 
-    //Lo siento Víctor, no he conseguido hacer la línea con el path, no poner el eje Y de los círculos de manera correcta...
+    //Lo siento Víctor, no he conseguido hacer la línea con el path, ni poner el eje Y de los círculos de manera correcta...
     
 })
 
