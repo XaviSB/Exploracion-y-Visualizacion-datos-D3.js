@@ -91,6 +91,8 @@ d3.csv("data.csv").then(data => {
         .attr("cx", d => x(d.year) + x.bandwidth()/2) 
         .attr("cy", d => y(d.all_ages))
         .attr("r", 8) */
+
+    //Lo siento Víctor, no he conseguido hacer la línea con el path, no poner el eje Y de los círculos de manera correcta...
     
 })
 
