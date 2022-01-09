@@ -97,7 +97,7 @@ d3.csv("data.csv").then(data => {
     elements.enter().append("circle")
         .attr("cx", d => x(d.year) + x.bandwidth()/2) 
         .attr("cy",  y(age(1998)))
-        .attr("r", 8)
+        .attr("r", 8) 
     
     
         
