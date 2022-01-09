@@ -88,11 +88,11 @@ d3.csv("data.csv").then(data => {
         .attr("y1", y(age(1998)))
         .attr("y2", y(age(2019)))
     
-    elements.enter().append("path")
+ /*   elements.enter().append("path")
         .attr("id", "Di_Caprio")
         .attr("d", d3.line()
         .x(d => x(d3.min(data.map(d => d.year))) + x.bandwidth()/2)
-        .y(d => d.age(2019)))
+        .y(d => d.age(2019)))*/
 
     elements.enter().append("circle")
         .attr("cx", d => x(d.year) + x.bandwidth()/2) 
