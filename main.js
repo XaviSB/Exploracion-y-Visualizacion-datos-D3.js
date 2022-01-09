@@ -77,7 +77,7 @@ d3.csv("data.csv").then(data => {
         .attr("x", d => x(d.year))
         .attr("y", d => y(d.age))
         .attr("dx", x.bandwidth()/2)
-        .attr('dy', '1em')
+        .attr('dy', '1em') 
         .text(d=> d.age)
 
     elements.enter().append("line")
