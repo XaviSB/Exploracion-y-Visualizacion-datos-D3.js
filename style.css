@@ -1,0 +1,24 @@
+#maxRefLine {
+    stroke: black;
+    stroke-dasharray: 1, 6;
+    opacity: 0.8;
+}
+
+path {
+    fill: none;
+    stroke: black;
+}
+
+#maxRefText {
+    opacity: 0.4;
+    fill: black;
+    font-size: 14px;
+}
+
+rect:hover  {
+    fill: aqua;
+}
+
+line {
+    stroke: black;
+}
