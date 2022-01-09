@@ -86,7 +86,7 @@ d3.csv("data.csv").then(data => {
         .attr("x2", x(d3.max(data.map(d => d.year))) + x.bandwidth()/2)
         .attr("y1", y(age(1998)))
         .attr("y2", y(age(2019)))
-
+ 
 /*  elements.enter().append("circle")
         .attr("cx", d => x(d.year) + x.bandwidth()/2) 
         .attr("cy", d => y(d.all_ages))
