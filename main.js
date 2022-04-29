@@ -92,7 +92,7 @@ d3.csv("data.csv").then(data => {
         .attr("cy", d => y(d.all_ages))
         .attr("r", 8) */
 
-    
+     
     
 })
 
